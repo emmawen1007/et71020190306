@@ -57,8 +57,8 @@
         <li><a href="about/index.html">About</a></li>
         <li><a href="service/index.html">Services</a></li>
         <li><a href="index.html#!/works">Works</a></li>
-        <li><a href="#">News</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="index.html#!/news">News</a></li>
+        <li><a href="index.html#!/contact">Contact</a></li>
         <li>
           <button type="button" class="button hollow topbar-responsive-button">Categories</button>
         </li>
@@ -188,15 +188,15 @@
                controller: 'WorksController',
                templateUrl: 'app/views/works.html'
              })
-             .when('/request',
+             .when('/news',
                {
-                 controller: 'RequestController',
-                 templateUrl: 'app/views/request.html'
+                 controller: 'NewsController',
+                 templateUrl: 'app/views/news.html'
                })
-            .when('/dealer',
+            .when('/contact',
                {
-                 controller: 'DealerController',
-                 templateUrl: 'app/views/dealer.html'
+                 controller: 'ContactController',
+                 templateUrl: 'app/viewscontact.html'
                })
             .when('/story',
                {
@@ -212,7 +212,7 @@
          app.controller('workseController', function($scope){
            $scope.customerID = 5;
          });
-         app.controller('RequestController', function($scope){
+         app.controller('NewstController', function($scope){
            $scope.customerID = 5;
          });
          app.controller('StoryController', function($scope){
